@@ -931,6 +931,10 @@ span {
         padding: 2rem;
     }
 
+    .education-content{
+        top: 0rem;
+    }
+
     .self-photo-container {
         position: absolute;
         width: 70%;
