@@ -925,16 +925,12 @@ span {
         top: 10%;
         left: 50%;
         transform: translateX(-50%);
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
         width: 80%;
-        height: fit-content;
+        height: 25rem;
         padding: 2rem;
     }
 
-    .education-content{
-        margin-bottom: 0;
-    }
-    
     .self-photo-container {
         position: absolute;
         width: 70%;
