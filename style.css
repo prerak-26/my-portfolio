@@ -931,6 +931,10 @@ span {
         padding: 2rem;
     }
 
+    .education-content{
+        margin-bottom: 0;
+    }
+    
     .self-photo-container {
         position: absolute;
         width: 70%;
@@ -938,7 +942,6 @@ span {
         bottom: 0;
         left: 50%;
         transform: translate(-50%,90%);
-        will-change: transform;
     }
 
     .education-items .item .info {
