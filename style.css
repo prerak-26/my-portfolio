@@ -918,30 +918,26 @@ span {
     }
 
     .education-container {
-        height: 50rem;
+        min-height: 50rem;
     }
 
     .education-card {
-        top: 30%;
+        top: 10%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
         grid-template-columns: repeat(1, 1fr);
         width: 80%;
         height: fit-content;
         padding: 2rem;
     }
 
-    .education-content{
-        top: 0rem;
-    }
-
     .self-photo-container {
         position: absolute;
         width: 70%;
         height: 80%;
-        top: 135%;
+        bottom: 0;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%,90%);
     }
 
     .education-items .item .info {
