@@ -281,6 +281,7 @@ span {
     align-content: center;
     justify-content: space-around;
     padding: 1rem 1rem;
+    margin-top: 5rem;
 }
 
 .image-container {
@@ -582,6 +583,7 @@ span {
     align-content: center;
     justify-content: center;
     height: 35rem;
+    margin-top: 5rem;
 }
 
 .background-container {
@@ -990,7 +992,7 @@ span {
     }
 
     .education-card {
-        width: 95%;
+        width: 90%;
     }
 
     .education-items .item .info {
