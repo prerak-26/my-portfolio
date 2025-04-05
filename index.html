@@ -439,31 +439,96 @@
     </section>
 
     <!-----------------Contact----------------->
-
-    <section class="contact" id="contact">
+    <section class="contact-section" id="contact">
         <div class="contact-container">
             <div class="contact-info">
-                <div class="contact-subinfo">
-                    <div class="conatact-icon"><i class='bx bxs-map'></i></div>
-                    <div class="contact-details">Unit 6/199 Hawkesbury Road <br> Westmead, NSW - 2145</div>
-                </div>
-                <div class="contact-subinfo">
-                    <div class="conatact-icon"><i class='bx bxs-phone-call'></i></div>
-                    <div class="contact-details">0474441815</div>
-                </div>
-                <div class="contact-subinfo">
-                    <div class="conatact-icon"><i class='bx bxs-envelope'></i></div>
-                    <div class="contact-details">prerak2557@gmail.com</div>
-                </div>
-                <div class="contact-links">
-                    <div class="github"><a href="https://github.com/prerak-26"><i class='bx bxl-github'></i></a></div>
-                    <div class="github"><a href="https://www.linkedin.com/in/prerak-patel-5695a3195/"><i
-                                class='bx bxl-linkedin'></i></a></div>
+                <div>
+                    <h2 class="contact-title">Contact Info</h2>
+                    <ul class="contact-details">
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ri-mail-send-fill"></i>
+                            </div>
+                            <div class="conatcct-method">
+                                <span>E-mail</span>
+                                <h4>prerak2557@gmail.com</h4>
+                                <a href="mailto:someone@example.com" target="_blank"><span>Send <i
+                                            class="ri-arrow-right-up-line"></i></span></a>
+                            </div>
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ri-whatsapp-fill"></i>
+                            </div>
+                            <div class="conatcct-method">
+                                <span>Whatsapp</span>
+                                <h4>+61 474-441-815</h4>
+                                <a href="https://wa.me/+61474441815?text=Hello%20there!%20How%20can%20I%20Help%20you?"
+                                    target="_blank"><span>Send <i class="ri-arrow-right-up-line"></i></span></a>
+                            </div>
+                        </li>
+
+                        <li class="contact-item">
+                            <div class="contact-icon">
+                                <i class="ri-phone-fill"></i>
+                            </div>
+                            <div class="conatcct-method">
+                                <span>Call</span>
+                                <h4>+61 474-441-815</h4>
+                                <a href="tel:61474441815" target="_blank"><span>Call Me <i
+                                            class="ri-arrow-right-up-line"></i></span></a>
+                            </div>
+                        </li>
+
+                        <li class="contact-social">
+                            <a href="https://www.facebook.com/" target="_blank" class="home-social-link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home-social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="copyright">© 2024. All rights reserved by preraksportfolio.netlify.app</div>
+            <div class="contact-form">
+                <h2 class="form-title">Let's Work</h2>
+                <form id="prerak-contact-form">
+                    <div class="form-box">
+                        <div class="input-box w50">
+                            <input name="fullname" type="text" class="form-input" required>
+                            <span class="form-span">Full Name *</span>
+                        </div>
+                        <div class="input-box w50">
+                            <input type="email" name="email" class="form-input" required>
+                            <span class="form-span">Email Address *</span>
+                        </div>
+                        <div class="input-box w100">
+                            <input type="text" name="subject" class="form-input" required>
+                            <span class="form-span">Your Subject *</span>
+                        </div>
+                        <div class="input-box w100">
+                            <textarea class="form-text" name="message" required></textarea>
+                            <span class="form-span">Write Your message here.....</span>
+                        </div>
+                        <div class="input-box submit-box">
+                            <button class="form-input" type="submit" name="submit">Send Message</button>
+                            <div class="submit-text">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
+
+    <div class="copy-right">
+        <p>© 2024. All rights reserved by preraksportfolio.netlify.app</p>
+        <p>Radhe Radhe</p>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script type="text/javascript" src="script.js"></script>
 </body>

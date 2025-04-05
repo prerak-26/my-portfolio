@@ -24,3 +24,32 @@ window.onscroll = () => {
     menu.classList.add('ri-function-line'); // Ensure reset on scroll
     navlist.classList.remove('active');
 };
+
+(function() {
+    emailjs.init({
+      publicKey: "gvqCsxhJWcQApHO3K",
+    });
+  })();
+  
+  const contactForm = document.getElementById('prerak-contact-form');
+  const contactAlert = document.querySelector('.submit-text');
+  
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    console.log(emailjs);
+  
+    emailjs.sendForm('service_k1zm0zc', 'template_rj15i0q', contactForm)
+      .then(() => {
+        console.log('SUCCESS');
+        contactAlert.innerHTML = "<span>Your message sent successfully!</span><i class='ri-checkbox-circle-fill'></i>";
+        contactForm.reset();
+
+        setTimeout(() => {
+            contactAlert.innerHTML = '';
+        }, 5000);
+      }, (error) => {
+        contactAlert.innerHTML = "<span>Message not sent</span><i class='ri-error-warning-fill'></i>";
+        contactAlert.title = error;
+      });
+  });
