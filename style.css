@@ -9,10 +9,11 @@
 
 :root {
     --bg-color: #ffffff;
+    --bg-alt-color: #f5f5f5;
     --text-color: #000;
-    --second-color: #545160;
+    --text-alt-color: #545160;
     --main-color: #f75023;
-    --second-bg-color: hsl(0, 0%, 96%);
+    --main-alt-color: #8067f0;
     --big-font: 5rem;
     --midum-font: 4rem;
     --h2-font: 3rem;
@@ -144,7 +145,7 @@ span {
 }
 
 .home-text p {
-    color: var(--second-color);
+    color: var(--text-alt-color);
     font-size: var(--p-font);
     line-height: 28px;
     margin-bottom: 20px;
@@ -157,7 +158,7 @@ span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(128, 103, 240, 1);
+    background: var(--main-alt-color);
     font-size: 17px;
     color: var(--bg-color);
     margin-right: 22px;
@@ -241,7 +242,7 @@ span {
     height: 100%;
     padding: 45px 45px 45px 45px;
     transition: ease .50s;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-alt-color);
 }
 
 .sub-img img {
@@ -280,7 +281,7 @@ span {
     align-items: center;
     align-content: center;
     justify-content: space-around;
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
     margin-top: 5rem;
 }
 
@@ -787,7 +788,7 @@ span {
 }
 
 .contact-title{
-    color: rgb(229, 128, 46);
+    color: var(--main-color);
     font-size: 3rem;
     margin-bottom: 2.5rem;
 }
@@ -815,7 +816,7 @@ span {
     justify-content: center;
     align-self: center;
     padding: 1rem;
-    color: whitesmoke;
+    color: var(--bg-alt-color);
     background: rgba(220, 218, 218, 0.3);
     border-radius: 5px;
 }
@@ -825,13 +826,21 @@ span {
 }
 
 .conatcct-method{
-    color: whitesmoke;
+    color: var(--bg-color);
     font-size: 1rem;
     font-weight: 100;
     letter-spacing: 1px;
     display: flex;
     flex-direction: column;
     gap: .3rem;
+}
+
+.conatcct-method span{
+    color: var(--bg-alt-color);
+}
+
+.conatcct-method a span{
+    color: var(--main-color);
 }
 
 .contact-social{
@@ -848,7 +857,7 @@ span {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    color: whitesmoke;
+    color: var(--bg-color);
     background: rgba(220, 218, 218, 0.3);
     border-radius: 50px;
 }
@@ -869,12 +878,12 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: hsl(0, 0%, 96%);
+    background: var(--bg-alt-color);
     z-index: -1;
 }
 
 .form-title{
-    color: black;
+    color: var(--text-color);
     font-size: 3rem;
     margin-bottom: 2rem;
 }
@@ -911,7 +920,7 @@ span {
     resize: none;
     padding: 5px 0;
     font-weight: 300;
-    color: black;
+    color: var(--text-color);
     border: none;
     outline: none;
     border-bottom: 1px solid #777;
@@ -940,21 +949,22 @@ span {
     font-size: .5rem;
     font-weight: 400;
     letter-spacing: 1px;
-    color:  #112037;
+    color: var(--text-alt-color);
 }
 
 .form-input[type="submit"]{
     position: relative;
     cursor: pointer;
-    background: black;
-    color: whitesmoke;
+    background: var(--main-color);
+    color: var(--bg-color);
     border: none;
     max-width: 150px;
     padding: 12px;
+    transition: 0.5s ease-in-out;
 }
 
 .form-input[type="submit"]:hover{
-    background: gray;
+    transform: scale(1.1);
 }
 
 .submit-box{
@@ -990,6 +1000,10 @@ span {
 
     .experience {
         padding: 50px 70px 100px 140px;
+    }
+
+    .experience-container{
+        padding: 1rem;
     }
 
     .education-card {
@@ -1255,10 +1269,6 @@ span {
         flex-direction: column;
         align-items: flex-start;
         gap: .5rem;
-    }
-
-    .section-content {
-        margin: 0rem 0.5rem 1rem 0.5rem;
     }
 }
 
