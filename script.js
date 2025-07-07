@@ -27,7 +27,7 @@ window.onscroll = () => {
 
 (function() {
     emailjs.init({
-      publicKey: "gvqCsxhJWcQApHO3K",
+      publicKey: "g78t8FMEf4CFi5x3F",
     });
   })();
   
